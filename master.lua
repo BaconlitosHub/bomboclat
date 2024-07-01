@@ -56,7 +56,7 @@ local Admin = Window:MakeTab({
 	PremiumOnly = false
 })
 
-local Section = Counter:AddSection({
+local Section = Admin:AddSection({
 	Name = "Scripts"
 })
 
