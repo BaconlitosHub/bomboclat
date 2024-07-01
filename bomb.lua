@@ -60,6 +60,23 @@ Blade:AddButton({
 	Name = "Visual",
 	Callback = function()
       		loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/a5945467f3b9388503ca653c0ea49cba.lua"))()
+  	end 
+   
+})
+local Dahood = Window:MakeTab({
+	Name = "Dahood",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Dahood:AddSection({
+	Name = "Scripts"
+})
+
+Dahood:AddButton({
+	Name = "Azure",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Actyrn/Scripts/main/AzureModded"))()
   	end    
 })
 
@@ -77,22 +94,5 @@ Admin:AddButton({
 	Name = "IY",
 	Callback = function()
       		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-  	end    
-})
-
-local Dahood = Window:MakeTab({
-	Name = "Dahood",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-local Section = Dahood:AddSection({
-	Name = "Scripts"
-})
-
-Dahood:AddButton({
-	Name = "Azure",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Actyrn/Scripts/main/AzureModded"))()
   	end    
 })
