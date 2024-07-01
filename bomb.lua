@@ -80,6 +80,40 @@ Dahood:AddButton({
   	end    
 })
 
+local Apoc = Window:MakeTab({
+	Name = "Apocalypse Rising 2",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Apoc:AddSection({
+	Name = "Scripts"
+})
+
+Apoc:AddButton({
+	Name = "Aimbot",
+	Callback = function()
+          loadstring(game:HttpGet("https://raw.githubusercontent.com/ttwizz/Open-Aimbot/master/source.lua", true))()
+  	end    
+})
+
+local Blox = Window:MakeTab({
+	Name = "Blox Fruits",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Apoc:AddSection({
+	Name = "Scripts"
+})
+
+Apoc:AddButton({
+	Name = "MMA",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/MAMAhub1/Mmahub/main/README.md"))()
+  	end    
+})
+
 local Admin = Window:MakeTab({
 	Name = "Admin",
 	Icon = "rbxassetid://4483345998",
