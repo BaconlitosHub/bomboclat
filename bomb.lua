@@ -50,6 +50,19 @@ Arsenal:AddButton({
   	end    
 })
 
+local Blade = Window:MakeTab({
+	Name = "Blade Ball",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Blade:AddButton({
+	Name = "Visual",
+	Callback = function()
+      		loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/a5945467f3b9388503ca653c0ea49cba.lua"))()
+  	end    
+})
+
 local Admin = Window:MakeTab({
 	Name = "Admin",
 	Icon = "rbxassetid://4483345998",
