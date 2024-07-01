@@ -60,7 +60,7 @@ local Section = Counter:AddSection({
 	Name = "Scripts"
 })
 
-Counter:AddButton({
+Admin:AddButton({
 	Name = "IY",
 	Callback = function()
       		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
