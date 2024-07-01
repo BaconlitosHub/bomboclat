@@ -103,7 +103,7 @@ local Blox = Window:MakeTab({
 	PremiumOnly = false
 })
 
-local Section = Apoc:AddSection({
+local Section = Blox:AddSection({
 	Name = "Scripts"
 })
 
