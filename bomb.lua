@@ -110,11 +110,11 @@ local Blox = Window:MakeTab({
 	PremiumOnly = false
 })
 
-local Section = Apoc:AddSection({
+local Section = Blox:AddSection({
 	Name = "Scripts"
 })
 
-Apoc:AddButton({
+Blox:AddButton({
 	Name = "MMA",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/MAMAhub1/Mmahub/main/README.md"))()
