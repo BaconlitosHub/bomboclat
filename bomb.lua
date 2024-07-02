@@ -91,11 +91,18 @@ local Section = Apoc:AddSection({
 })
 
 Apoc:AddButton({
-	Name = "Aimbot",
+	Name = "Silent",
 	Callback = function()
-          loadstring(game:HttpGet("https://raw.githubusercontent.com/ttwizz/Open-Aimbot/master/source.lua", true))()
+		UPDATE_TIME = 0.1 -- Set higher depending on your PC performance
+		esp_Parts = {
+		player = {"Head", "LeftUpperLeg", "LeftLowerLeg", "RightUpperLeg", "RightLowerLeg", "LeftUpperArm", "LeftLowerArm", "RightUpperArm", "RightLowerArm", "HumanoidRootPart"},
+		zombie = {"HumanoidRootPart"}
+		}
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/NullR3F/AR2C/main/AR2C_Mod_Menu.lua'),true))()
   	end    
 })
+
+Apoc:AddLabel("Key: 600_Members_Giveaway_FA")
 
 local Blox = Window:MakeTab({
 	Name = "Blox Fruits",
@@ -103,11 +110,11 @@ local Blox = Window:MakeTab({
 	PremiumOnly = false
 })
 
-local Section = Blox:AddSection({
+local Section = Apoc:AddSection({
 	Name = "Scripts"
 })
 
-Blox:AddButton({
+Apoc:AddButton({
 	Name = "MMA",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/MAMAhub1/Mmahub/main/README.md"))()
